@@ -1,0 +1,72 @@
+:root {
+  --color-bg: #000000;
+  --color-text-main: #ffffff;
+  --color-primary: #FFFFFF;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+body {
+  font-family: HK Grotesk;
+  background-color: var(--color-bg);
+}
+
+.thumbnail {
+    width: 320px;
+    height: 240px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;    
+}
+
+.image img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+.image:hover img {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
+
+.center {
+height: 250px;
+   left: 50%;
+   margin-top: -125px;
+   margin-left: -125px;
+   position: absolute;
+   top: 50%;
+   width: 250px;
+}
+
+img {
+  pointer-events: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+/* Don't mind the code above... */
+
+.image-wrapper {
+  transition: ease .5s;
+}
+
+.image-wrapper:hover {
+  transform: scale(1.3)
+}
